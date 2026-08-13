@@ -7,7 +7,7 @@ export default function ContactPage(){
       <SectionHeading eyebrow="PLAN YOUR WEDDING">Contact & Enquiry</SectionHeading>
       <p className="mt-6 text-beige">Share your details and one of our senior planners will contact you to craft your bespoke celebration.</p>
 
-      <div className="mt-10 bg-black/30 p-8 rounded">
+      <div className="mt-10 bg-softBlack/30 p-8 rounded">
         <ContactForm />
       </div>
 

@@ -21,7 +21,7 @@ export default function Page() {
         </p>
       </section>
 
-      <section className="bg-black/40 py-20">
+      <section className="bg-softBlack/60 py-20">
         <div className="max-w-6xl mx-auto px-6">
           <SectionHeading eyebrow="SERVICES">What we do</SectionHeading>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -47,7 +47,7 @@ export default function Page() {
         <Timeline steps={[ 'Discover', 'Design', 'Plan', 'Coordinate', 'Execute', 'Celebrate' ]} />
       </section>
 
-      <section className="bg-black/40 py-20">
+      <section className="bg-softBlack/60 py-20">
         <div className="max-w-6xl mx-auto px-6">
           <SectionHeading eyebrow="DESTINATION WEDDINGS">Pan India destinations</SectionHeading>
           <DestinationGrid />
@@ -59,7 +59,7 @@ export default function Page() {
         <PortfolioGallery />
       </section>
 
-      <section className="bg-black/40 py-20">
+      <section className="bg-softBlack/60 py-20">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h3 className="text-3xl md:text-4xl font-serif text-ivory">One team. One vision. Every detail managed.</h3>
           <p className="mt-6 text-beige">Pan India execution · End-to-end management · 24×7 support · Premium vendor network</p>
@@ -84,8 +84,8 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="relative bg-[url('/og-image.jpg')] bg-cover bg-center py-28 mt-20">
-        <div className="max-w-4xl mx-auto px-6 text-center bg-black/40 backdrop-blur-sm py-20 rounded">
+      <section className="relative bg-[url('/og-image.svg')] bg-cover bg-center py-28 mt-20">
+        <div className="max-w-4xl mx-auto px-6 text-center bg-softBlack/40 backdrop-blur-sm py-20 rounded">
           <h2 className="text-4xl md:text-5xl font-serif text-ivory">YOUR WEDDING DESERVES MORE THAN A CHECKLIST.</h2>
           <p className="mt-6 text-beige">Let’s create something unforgettable — a celebration that endures.</p>
           <div className="mt-10">
