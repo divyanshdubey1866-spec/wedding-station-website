@@ -1,29 +1,24 @@
+import { SITE } from '../lib/content';
+
 export default function Head() {
-  const siteUrl = 'https://wedding-station-website-abc.vercel.app';
+  const siteUrl = SITE.url;
   const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Wedding Station",
-    "url": siteUrl,
-    "logo": `${siteUrl}/logo.png`,
-    "sameAs": ["https://www.instagram.com/", "https://www.facebook.com/"]
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: SITE.title,
+    url: siteUrl,
+    logo: `${siteUrl}${SITE.logo}`,
   };
 
   return (
     <>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Wedding Station | Luxury Wedding Planning & Management</title>
-      <meta
-        name="description"
-        content="Wedding Station is a luxury wedding planning and management company creating extraordinary weddings and destination celebrations across India."
-      />
+      <title>{SITE.title} | Luxury Wedding Planning & Management</title>
+      <meta name="description" content={SITE.description} />
 
-      <meta property="og:title" content="Wedding Station | Luxury Wedding Planning & Management" />
-      <meta
-        property="og:description"
-        content="Wedding Station is a luxury wedding planning and management company creating extraordinary weddings and destination celebrations across India."
-      />
+      <meta property="og:title" content={`${SITE.title} | Luxury Wedding Planning & Management`} />
+      <meta property="og:description" content={SITE.description} />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_IN" />
       <meta property="og:image" content="/og-image.svg" />
@@ -41,6 +36,7 @@ export default function Head() {
       />
 
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      <link rel="sitemap" href="/sitemap.xml" />
     </>
   );
 }
