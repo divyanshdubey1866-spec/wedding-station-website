@@ -7,7 +7,8 @@ export default function Header() {
     <header className="w-full border-b border-champagne py-4" style={{background: 'var(--soft-black)'}}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-4" aria-label="Wedding Station home">
-          <Image src="/logo.png" alt="Wedding Station" width={160} height={48} className="object-contain" />
+          {/* Use a regular img with onError fallback to logo.svg so a placeholder is available until the original logo.png is uploaded */}
+          <img src="/logo.png" alt="Wedding Station" width={160} height={48} className="object-contain" onError={(e:any)=>{ e.currentTarget.onerror = null; e.currentTarget.src = '/logo.svg'; }} />
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 text-sm">
