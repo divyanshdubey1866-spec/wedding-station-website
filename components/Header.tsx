@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../public/logo.png';
 import MobileMenu from './MobileMenu';
 
 export default function Header() {

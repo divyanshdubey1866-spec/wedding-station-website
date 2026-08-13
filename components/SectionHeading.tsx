@@ -1,4 +1,6 @@
-export default function SectionHeading({ eyebrow, children }: { eyebrow?: string; children: React.ReactNode }) {
+import type { ReactNode } from 'react';
+
+export default function SectionHeading({ eyebrow, children }: { eyebrow?: string; children: ReactNode }) {
   return (
     <header className="text-center">
       {eyebrow && <div className="text-sm text-beige tracking-widest">{eyebrow}</div>}
