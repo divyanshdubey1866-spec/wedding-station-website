@@ -7,12 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        deepBlack: '#050505',
-        softBlack: '#0B0A08',
+        charcoal: '#1A1A1A',
         warmChampagne: '#D6B36A',
         softChampagne: '#E3C98A',
-        lightChampagne: '#F3DFA8',
-        antiqueGold: '#B8924A',
         warmIvory: '#F5EFE3',
         mutedBeige: '#B9AE9A'
       },
