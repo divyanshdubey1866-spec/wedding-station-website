@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root{
+  --white: #FFFFFF;
   --deep-black: #050505;
   --soft-black: #0B0A08;
   --warm-champagne: #D6B36A;
@@ -11,21 +12,24 @@
   --antique-gold: #B8924A;
   --warm-ivory: #F5EFE3;
   --muted-beige: #B9AE9A;
+  --charcoal: #1A1A1A;
 }
 
 html,body,#root{height:100%;}
-body{background:var(--deep-black); color:var(--warm-ivory); font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+body{background:var(--white); color:var(--charcoal); font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
 
 /* utility mappings to match Tailwind theme extension */
 .text-ivory{color:var(--warm-ivory)}
 .text-beige{color:var(--muted-beige)}
 .text-champagne{color:var(--warm-champagne)}
 .text-antique{color:var(--antique-gold)}
+.text-charcoal{color:var(--charcoal)}
 
 .bg-deepBlack{background:var(--deep-black)}
 .bg-softBlack{background:var(--soft-black)}
 .bg-warmChampagne{background:var(--warm-champagne)}
 .bg-softChampagne{background:var(--soft-champagne)}
+.bg-warm-ivory{background:var(--warm-ivory)}
 
 .border-champagne{border-color:rgba(214,179,106,0.14)}
 .border-champagne-strong{border-color:var(--warm-champagne)}
@@ -33,7 +37,7 @@ body{background:var(--deep-black); color:var(--warm-ivory); font-family:Inter, s
 /* Buttons */
 .btn-primary{
   background:var(--warm-champagne);
-  color:var(--deep-black);
+  color:var(--charcoal);
   padding:0.625rem 1.75rem;
   border-radius:6px;
   font-weight:600;
@@ -55,7 +59,7 @@ body{background:var(--deep-black); color:var(--warm-ivory); font-family:Inter, s
 .card-rounded{border-radius:8px}
 
 /* Hero overlay helpers */
-.hero-overlay{background:linear-gradient(180deg, rgba(5,5,5,0.65) 0%, rgba(11,10,8,0.75) 100%)}
+.hero-overlay{background:linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(245,239,227,0.9) 100%)}
 
 /* Image reveal */
 .image-reveal{transform:translateY(6px); opacity:0; transition:opacity .8s ease, transform .8s ease}
@@ -69,4 +73,3 @@ body{background:var(--deep-black); color:var(--warm-ivory); font-family:Inter, s
 
 /* ensure links don't inherit too much gold */
 a{color:inherit}
-
