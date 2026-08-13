@@ -7,13 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          900: '#0a0a0a',
-          800: '#0f0f0f',
-          champagne: '#bfa56a',
-          ivory: '#f7f2ec',
-          beige: '#e8dfd3'
-        }
+        deepBlack: '#050505',
+        softBlack: '#0B0A08',
+        warmChampagne: '#D6B36A',
+        softChampagne: '#E3C98A',
+        lightChampagne: '#F3DFA8',
+        antiqueGold: '#B8924A',
+        warmIvory: '#F5EFE3',
+        mutedBeige: '#B9AE9A'
       },
       fontFamily: {
         serif: ['"Playfair Display"', 'serif'],

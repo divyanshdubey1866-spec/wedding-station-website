@@ -4,9 +4,9 @@ import MobileMenu from './MobileMenu';
 
 export default function Header() {
   return (
-    <header className="w-full border-b border-black/20">
-      <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-4">
+    <header className="w-full border-b border-champagne py-4" style={{background: 'var(--soft-black)'}}>
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-4" aria-label="Wedding Station home">
           <Image src="/logo.png" alt="Wedding Station" width={160} height={48} className="object-contain" />
         </Link>
 
@@ -17,7 +17,7 @@ export default function Header() {
           <a href="/portfolio" className="text-beige hover:text-ivory">PORTFOLIO</a>
           <a href="/experience" className="text-beige hover:text-ivory">EXPERIENCE</a>
           <a href="/contact" className="text-beige hover:text-ivory">CONTACT</a>
-          <a href="/contact" className="ml-6 inline-block px-5 py-2 border border-champagne text-champagne hover:bg-champagne hover:text-brand-900 transition">PLAN YOUR WEDDING</a>
+          <a href="/contact" className="ml-6 inline-block px-5 py-2 border border-champagne-strong text-champagne hover:bg-warmChampagne/90 transition">PLAN YOUR WEDDING</a>
         </nav>
 
         <div className="md:hidden">
