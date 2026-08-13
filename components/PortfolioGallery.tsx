@@ -13,10 +13,10 @@ export default function PortfolioGallery() {
   return (
     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {items.map((it) => (
-        <div key={it.title} className="relative h-64 bg-black/40 rounded overflow-hidden">
+        <div key={it.title} className="relative h-64 bg-warm-ivory rounded overflow-hidden">
           <Image src={it.src + '?auto=format&fit=crop&w=1200&q=60'} fill alt={it.title} className="object-cover" />
           <div className="absolute bottom-4 left-4">
-            <h4 className="text-2xl font-serif text-ivory">{it.title}</h4>
+            <h4 className="text-2xl font-serif text-charcoal">{it.title}</h4>
           </div>
         </div>
       ))}
