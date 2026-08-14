@@ -1,4 +1,4 @@
-import AIFormShell from '../../components/AIEventBudget/AIFormShell';
+import AIFormShell from '../../../components/AIEventBudget/AIFormShell';
 
 export default function NewAIBudgetPage() {
   return (
