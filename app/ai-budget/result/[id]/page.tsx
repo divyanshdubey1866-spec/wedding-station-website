@@ -1,4 +1,4 @@
-import BudgetResultCard from '../../../components/AIEventBudget/BudgetResultCard';
+import BudgetResultCard from '../../../../components/AIEventBudget/BudgetResultCard';
 
 interface Props {
   params: { id: string };
