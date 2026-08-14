@@ -3,7 +3,7 @@ export type NavItem = { label: string; href: string };
 export const SITE = {
   title: 'Wedding Station',
   description:
-    'Wedding Station is a luxury wedding planning and management company creating extraordinary weddings and destination celebrations across India. We combine editorial storytelling, five-star hospitality and meticulous production to create unforgettable events.',
+    'Wedding Station is a luxury wedding planning and management company creating extraordinary weddings and destination celebrations across India. We combine editorial storytelling, five-star hospitality and expert planning to craft unforgettable moments.',
   url: 'https://wedding-station.example',
   logo: '/logo.png',
 };
@@ -15,6 +15,7 @@ export const NAV: NavItem[] = [
   { label: 'Portfolio', href: '/portfolio' },
   { label: 'Destinations', href: '/destinations' },
   { label: 'Process', href: '/process' },
+  { label: 'AI Event Budget', href: '/ai-budget' },
   { label: 'Contact', href: '/contact' },
 ];
 
